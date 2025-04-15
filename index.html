@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Create Account</h1>
+                <p>Please enter a username with at least one special character</p>
+            
+            </div>
+            
+            <form id="usernameForm">
+                <div class="input-group">
+                    <label for="username" style="width: 500px;">Username</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="off">
+                    </div>
+                    <div class="requirements">
+                        <p>Must include at least one: <span class="special-char">@</span> <span class="special-char">.</span> <span class="special-char">!</span> <span class="special-char">,</span></p>
+                    </div>
+                    <div id="validationMessage" class="validation-message"></div>
+                </div>
+
+                </div>
+                <button style="height: 100px;margin-top: 400px;margin-right:1050px;" class="big-button">Create Account</button>
+                    
+                    </div>
+                  </div>
+            
+                  <div class="form-footer">
+                    <p>Already have an account? <a href="#">Sign In</a></p>
+                </div>
+            </div>
+            </form>
+            
+          
+
+    <script src="app.js"></script>
+</body>
+</html>
